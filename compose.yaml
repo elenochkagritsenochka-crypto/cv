@@ -1,0 +1,11 @@
+services:
+    serv:
+        image: nginx
+        ports:
+            - 38080:80
+        volumes:
+            - ./.nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./index.html:/srv/www/index.html:ro
+            - ./assets:/srv/www/assets:ro
+            - ./404.html:/srv/www/404.html:ro
+        restart: always
