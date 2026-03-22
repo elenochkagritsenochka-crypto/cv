@@ -140,9 +140,30 @@ h2 {
     .portfolio_case7 {
         grid-row: span 4 !important;
     }
+
+    .main-content {
+        margin: 1rem !important;
+    }
+
+    .portfolio,
+    .hero-content,
+    .main-content {
+        padding: 1rem !important;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
+
+    .main-content {
+        margin: 1rem !important;
+    }
+
+    .portfolio,
+    .hero-content,
+    .main-content {
+        padding: 1rem !important;
+    }
+
     .portfolio_container {
         --col-count: 8;
     }
