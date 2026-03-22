@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+        @media (max-width: 600px) {
+            .portfolio_container {
+                --col-count: 3;
+            }
+
+            .portfolio_case {
+                flex-direction: column !important;
+                grid-column: span 3 !important;
+            }
+
+            .portfolio_case1 {
+                grid-row: span 3 !important;
+            }
+
+            .portfolio_case2 {
+                grid-row: span 6 !important;
+            }
+
+            .portfolio_case3 {
+                grid-row: span 4 !important;
+            }
+
+            .portfolio_case4 {
+                grid-row: span 4 !important;
+            }
+
+            .portfolio_case5 {
+
+                grid-row: span 4 !important;
+            }
+
+            .portfolio_case6 {
+
+                grid-row: span 4 !important;
+            }
+
+            .portfolio_case7 {
+                grid-row: span 4 !important;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1200px) {
+            .portfolio_container {
+                --col-count: 8;
+            }
+
+            .portfolio_case {
+                /*flex-direction: column !important;*/
+                /*grid-column: span 3 !important;*/
+            }
+
+            .portfolio_case1 {
+                grid-column: span 8 !important;
+                grid-row: span 3 !important;
+            }
+
+            .portfolio_case2 {
+                grid-column: span 3 !important;
+                grid-row: span 7 !important;
+            }
+
+            .portfolio_case5 {
+                grid-row: span 2 !important;
+                grid-column: span 5 !important;
+                flex-direction: row !important;
+            }
+
+            .portfolio_case6 {
+
+                grid-row: span 2 !important;
+                grid-column: span 4 !important;
+                flex-direction: row !important;
+            }
+
+            .portfolio_case3 {
+
+                grid-row: span 4 !important;
+                grid-column: span 2 !important;
+                flex-direction: column !important;
+            }
+
+            .portfolio_case4 {
+
+                grid-row: span 5 !important;
+                grid-column: span 3 !important;
+                flex-direction: column !important;
+            }
+
+            .portfolio_case7 {
+
+                grid-row: span 2 !important;
+                grid-column: span 4 !important;
+                flex-direction: row !important;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .portfolio_container {
+                --col-count: 12;
+            }
+        }
+
+        .portfolio_container {
+            --col-size: calc(100vw / var(--col-count));
+            grid-template-columns: repeat(var(--col-count), 1fr);
+            grid-auto-rows: calc(var(--col-size));
+            display: grid;
+        }
+
+        .portfolio_case {
+            display: flex;
+            flex-direction: column;
+            background-color: #0001;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio_case1 {
+            grid-column: span 8;
+            grid-row: span 3;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .portfolio_case2 {
+            grid-column: span 4;
+            grid-row: span 7;
+        }
+
+        .portfolio_case3 {
+            grid-column: span 6;
+            grid-row: span 2;
+
+            flex-direction: row;
+        }
+
+        .portfolio_case4 {
+            grid-column: span 2;
+            grid-row: span 4;
+
+        }
+
+        .portfolio_case5 {
+            grid-column: span 6;
+            grid-row: span 2;
+
+            flex-direction: row;
+        }
+
+        .portfolio_case6 {
+            grid-column: span 6;
+            grid-row: span 2;
+
+            flex-direction: row;
+        }
+
+        .portfolio_case7 {
+            grid-column: span 6;
+            grid-row: span 2;
+
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="portfolio_container">
+        <div class="portfolio_case portfolio_case1">
+            <div class="img">
+                <img src="img1.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="portfolio_case portfolio_case2">
+            <div class="img">
+                <img src="img2.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="portfolio_case portfolio_case3">
+            <div class="img">
+                <img src="img3.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="portfolio_case portfolio_case4">
+            <div class="img">
+                <img src="img6.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="portfolio_case portfolio_case5">
+            <div class="img">
+                <img src="img5.png" alt="">
+            </div>
+            <div class="text">
+
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="portfolio_case portfolio_case6">
+            <div class="img">
+                <img src="img6.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="portfolio_case portfolio_case7">
+            <div class="img">
+                <img src="img7.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Ось минога</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
